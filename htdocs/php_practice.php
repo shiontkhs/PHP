@@ -21,7 +21,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello this is Me!</h1>
+    <!-- <h1>Hello this is Me!</h1> -->
     <?php 
         //echo "Hello";
 
@@ -330,12 +330,30 @@
             <li> item <?php echo $x; ?> </li>
         <?php } ?> -->
           
-        <?php
-        $x = array ("Maria", "Juan", "Jose");
-        foreach($x as $value){ ?>
-            <li> <?php echo $value; ?> </li>
-        <?php } ?>
+        <!-- <?php
+            $students = array(
+                array("name"=>"Juan Cruz", "gender"=> "Male", "grade"=>"Grade 7"),
+                array("name"=>"Maria Makiling", "gender"=> "Female", "grade"=>"Grade 11"),
+                array("name"=>"Juan Luna", "gender"=> "Male", "grade"=>"First Year"),
+            );
+        ?>
+        
+      <table>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Grade</th>
+            </tr>
+            <?php foreach($students as $student){ ?>
+                <tr>
+                    <td><?php echo $student["name"]; ?></td>
+                    <td><?php echo $student["gender"]; ?></td>
+                    <td><?php echo $student["grade"]; ?></td>
+                </tr>
+            <?php } ?>
+        </table> -->
+                
     
-    </ol>
+    
 </body>
 </html>
